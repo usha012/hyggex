@@ -44,7 +44,7 @@ const Content = () => {
                             {
                                 Array.from({length: 10})?.map((el, index) => (
                                     <div>
-                                        <Card />
+                                        <Card activeTab={activeTab}/>
                                     </div>
                                 ))
                             }

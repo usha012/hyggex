@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Card = () => {
+const Card = ({activeTab}) => {
 	return (
 		<div className="flex justify-center ">
 			<div className="h-[300px] md:h-[485px] relative w-[712px] rounded-[42px] flex items-center justify-center bg-gradient-to-tr from-[#1F80EB] to-[#051A91]">
@@ -12,7 +12,7 @@ const Card = () => {
 					<path fill-rule="evenodd" clip-rule="evenodd" d="M15.8249 3.50143V0.582581C21.5067 1.87197 25.7433 6.94453 25.7433 13.0089C25.7433 19.0733 21.5067 24.1459 15.8249 25.4353V22.5164C19.9198 21.2979 22.9094 17.5005 22.9094 13.0089C22.9094 8.51731 19.9198 4.71997 15.8249 3.50143ZM0.2388 8.75818V17.2597H5.90646L12.991 24.3443V1.67361L5.90646 8.75818H0.2388ZM19.3672 13.0089C19.3669 11.8217 19.0351 10.6582 18.4093 9.64934C17.7834 8.64049 16.8884 7.8264 15.8249 7.29876V18.7049C17.9219 17.6706 19.3672 15.5169 19.3672 13.0089Z" fill="#F5F5F5" />
 				</svg>
 
-				<span className="text-white text-[38px] font-[Lato]"> 9 + 6 + 7x - 2x - 3 </span>
+				<span className="text-white text-[38px] font-[Lato]">{activeTab} - 9 + 6 + 7x - 2x - 3 </span>
 			</div>
 		</div>
 	)
